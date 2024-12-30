@@ -19,7 +19,8 @@
 /* Header Section Styling Start */
 header {
   background-color: var(--dark);
-  height: 600px;
+  padding-bottom: 5.5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 80%, 0 100%);
 }
 .container {
   max-width: 1052px;
@@ -44,13 +45,45 @@ header nav .left a {
 header nav .left a:hover {
   color: var(--primary);
 }
+/* Hero Section Styling Start */
+.hero .left img {
+  width: 250px;
+}
+.hero .right {
+  margin-top: -7rem;
+  color: var(--pure);
+}
+.hero .right h6 {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.hero .right h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.hero .right h1 span {
+  color: var(--primary);
+}
+.hero .right p {
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
 
 /* Utilities/Common CSS */
 .flex {
   display: flex;
 }
+.flex-1 {
+  flex: 1;
+}
 .items-center {
   align-items: center;
+}
+.justify-center {
+  justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
@@ -73,4 +106,14 @@ header nav .left a:hover {
   background-color: transparent;
   border-color: var(--primary);
   color: var(--primary);
+}
+.btn-secondary {
+  background-color: transparent;
+  border-color: var(--primary);
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: var(--dark);
 }
