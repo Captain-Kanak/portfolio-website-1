@@ -148,8 +148,8 @@ header nav .left a:hover {
 .services .card-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 5rem;
+  column-gap: 2rem;
+  row-gap: 5rem;
 }
 .services .card-wrapper .card {
   background-color: var(--pure);
@@ -204,6 +204,7 @@ header nav .left a:hover {
   color: var(--pure);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
   padding-bottom: 11rem;
+  margin-bottom: 3rem;
 }
 .freelancer h1 {
   font-size: 2rem;
@@ -213,6 +214,65 @@ header nav .left a:hover {
   margin-bottom: 3rem;
   color: var(--primary);
   font-family: "Lato", serif;
+}
+
+/* Reviews Section Styling Start */
+.reviews h1 {
+  text-align: center;
+}
+.reviews h1 span {
+  color: var(--primary);
+}
+.reviews p {
+  text-align: center;
+  color: var(--ternary);
+}
+.reviews .slider .slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 13rem;
+}
+.reviews .slider .slide img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+.reviews .slider .slide p {
+  font-family: "Lato", serif;
+  color: var(--ternary);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.reviews .slider .slide span {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.reviews .slider-dots {
+  margin-top: 2rem;
+}
+/* custom class from JS */
+.reviews .slider-dots .dots {
+  list-style: none;
+  display: flex !important;
+  justify-content: center;
+}
+.reviews .slider-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 6px;
+  margin-right: 0.3rem;
+  border: none;
+  outline: none;
+  background-color: var(--ternary);
+  border-radius: 30%;
+  cursor: pointer;
+}
+.reviews .dots li.slick-active button {
+  background-color: var(--primary);
+  width: 25px;
 }
 
 /* Footer Section Styling Start */
