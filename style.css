@@ -1,5 +1,7 @@
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
 /* Default CSS Reset */
 * {
   margin: 0;
@@ -8,6 +10,7 @@
   font-family: "Poppins", sans-serif;
   /* -webkit-font-smoothing: antialiased; */
 }
+
 /* Color Picking */
 :root {
   --primary: #3dcfd3;
@@ -16,6 +19,7 @@
   --ternary: #898989;
   --light: #f2f2f2;
 }
+
 /* Header Section Styling Start */
 header {
   background-color: var(--dark);
@@ -45,6 +49,7 @@ header nav .left a {
 header nav .left a:hover {
   color: var(--primary);
 }
+
 /* Hero Section Styling Start */
 .hero .left img {
   width: 250px;
@@ -70,6 +75,53 @@ header nav .left a:hover {
 .hero .right p {
   line-height: 1.9;
   margin-bottom: 1rem;
+}
+
+/* About Section Styling Start */
+.about {
+  padding: 4rem 0;
+}
+.about .about-img {
+  height: 350px;
+}
+.about h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.about h1 span {
+  color: var(--primary);
+}
+.about h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.about p {
+  font-size: 16px;
+  color: var(--ternary);
+  font-family: "Lato", serif;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.about .social a {
+  text-decoration: none;
+  background-color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.6rem;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  transition: all 0.3s ease;
+}
+.about .social a:hover {
+  background-color: var(--primary);
+}
+.about .social a i {
+  font-size: 15px;
+  color: var(--pure);
 }
 
 /* Utilities/Common CSS */
