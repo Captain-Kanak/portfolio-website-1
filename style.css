@@ -124,6 +124,76 @@ header nav .left a:hover {
   color: var(--pure);
 }
 
+/* Services Section Styling Start */
+.services {
+  background-color: var(--light);
+  padding: 3.5rem 0;
+}
+.services h1 {
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+}
+.services h1 span {
+  color: var(--primary);
+}
+.services h1 + p {
+  color: var(--ternary);
+  text-align: center;
+  font-family: "Lato", serif;
+  margin-bottom: 5.5rem;
+}
+.services .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 5rem;
+}
+.services .card-wrapper .card {
+  background-color: var(--pure);
+  padding: 4rem 1.5rem;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px var(--dark);
+  position: relative;
+  transition: all 0.3s ease;
+}
+.services .card-wrapper .card:hover {
+  background-color: var(--dark);
+  .img i {
+    color: var(--dark);
+  }
+  h2 {
+    color: var(--primary);
+  }
+}
+.services .card-wrapper .card h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.services .card-wrapper .card p {
+  font-family: "Lato", serif;
+  color: var(--ternary);
+  line-height: 1.5;
+}
+
+.services .card-wrapper .card .img {
+  background-color: var(--primary);
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.services .card-wrapper .card .img i {
+  color: var(--dark);
+  font-size: 30px;
+  padding: 20px;
+}
+
 /* Utilities/Common CSS */
 .flex {
   display: flex;
