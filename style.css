@@ -23,8 +23,8 @@
 /* Header Section Styling Start */
 header {
   background-color: var(--dark);
-  padding-bottom: 5.5rem;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 80%, 0 100%);
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 70%, 0 100%);
 }
 .container {
   max-width: 1052px;
@@ -205,7 +205,7 @@ header nav .left a:hover {
     url("images/camera.png");
   padding: 4rem 0;
   color: var(--pure);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
   padding-bottom: 11rem;
   margin-bottom: 3rem;
 }
@@ -331,6 +331,67 @@ header nav .left a:hover {
   text-decoration: none;
   font-size: 16px;
   color: var(--dark);
+}
+
+/* Blog Section Styling Start */
+.blog {
+  background-color: var(--dark);
+  margin-top: 3rem;
+  padding: 3rem 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 85%, 0 100%);
+  padding-bottom: 12rem;
+}
+.blog h1 {
+  text-align: center;
+  color: var(--primary);
+}
+.blog h1 + p {
+  text-align: center;
+  color: var(--ternary);
+  margin-bottom: 4rem;
+}
+.blog .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+}
+.blog .card-wrapper .card {
+  background-color: var(--pure);
+}
+.blog .card-wrapper .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog .card-wrapper .card .card-content {
+  padding: 1rem 2rem;
+  padding-bottom: 2rem;
+}
+.blog .card-wrapper .card .card-content a {
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--dark);
+  transition: all 0.3s ease;
+}
+.blog .card-wrapper .card .card-content a:hover {
+  color: var(--primary);
+}
+.blog .card-wrapper .card .card-content a + span {
+  display: block;
+  font-size: 0.9rem;
+  color: #3a3a3a;
+  margin-top: 0.3rem;
+}
+.blog .card-wrapper .card .card-content p {
+  color: var(--ternary);
+  font-size: 15px;
+  margin-top: 0.5rem;
+  font-family: "Lato", serif;
+  line-height: 1.6;
+}
+.blog .card-wrapper .card .card-content p a {
+  color: var(--dark);
+  font-size: 15px;
 }
 
 /* Footer Section Styling Start */
