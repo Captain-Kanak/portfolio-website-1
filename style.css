@@ -394,6 +394,84 @@ header nav .left a:hover {
   font-size: 15px;
 }
 
+/* Contact Section Styling Start */
+.contact {
+  margin-top: 1rem;
+}
+.contact h1 {
+  text-align: center;
+  color: var(--dark);
+}
+.contact h1 span {
+  color: var(--primary);
+}
+.contact h1 + p {
+  text-align: center;
+  color: var(--ternary);
+  margin-bottom: 2rem;
+}
+.contact .card-wrapper .card .card-img {
+  font-size: 50px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contact .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+}
+.contact .card-wrapper .card {
+  text-align: center;
+}
+.contact .card-wrapper .card h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.contact .card-wrapper .card h6 {
+  font-size: 1rem;
+  color: var(--ternary);
+  font-weight: 400;
+}
+.contact form {
+  margin-top: 3rem;
+}
+.contact input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.contact input:focus {
+  outline: none;
+}
+.contact .input-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  margin-bottom: 1.5rem;
+}
+.contact .input-wrap-2 {
+  display: flex;
+  flex-direction: column;
+}
+.contact .input-wrap-2 input {
+  margin-bottom: 1rem;
+}
+.contact .input-wrap-2 textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  height: 150px;
+}
+.contact .input-wrap-2 textarea:focus {
+  outline: none;
+}
+.contact .btn-wrapper {
+  text-align: center;
+  margin-top: 1rem;
+}
+.contact .btn-wrapper button:hover {
+  background-color: var(--dark);
+}
+
 /* Footer Section Styling Start */
 footer {
   height: 200px;
