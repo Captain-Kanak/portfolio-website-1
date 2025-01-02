@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
   /* -webkit-font-smoothing: antialiased; */
 }
 
@@ -474,7 +475,30 @@ header nav .left a:hover {
 
 /* Footer Section Styling Start */
 footer {
-  height: 200px;
+  margin-top: 4rem;
+  background-color: var(--dark);
+  height: 250px;
+  text-align: center;
+  padding: 2rem 0;
+}
+footer img {
+  width: 150px;
+}
+footer .footer-socials {
+  margin-top: 2rem;
+}
+footer .footer-socials a {
+  color: var(--light);
+  margin: 0 0.4rem;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+footer .footer-socials a:hover {
+  color: var(--primary);
+}
+footer p {
+  margin-top: 2.5rem;
+  color: var(--ternary);
 }
 
 /* Utilities/Common CSS */
